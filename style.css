@@ -46,6 +46,10 @@ nav {
   color: black;
   font-size: 14px;
   text-decoration: none;
+  transition: 0.3s all ease;
+}
+.nav-links a:hover {
+  scale: 120%;
 }
 h2 > a {
   color: black;
@@ -84,7 +88,7 @@ h2 > a {
 .img-div {
   height: 820px;
   width: 1440px;
-  background-image: url(/Paste\ image.png);
+  background-image: url(bg1.png);
 }
 
 .hero-Content {
@@ -308,7 +312,7 @@ h2 > a {
 /* *best Seller start here */
 .bestSeller {
   max-width: 1440px;
-  height: 1206px;
+  /* height: 1206px; */
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -812,7 +816,7 @@ footer {
   }
   footer {
     width: 375px;
-    height:665px;
+    height: 665px;
     padding: 48px 32px 48px 32px;
   }
 
@@ -840,5 +844,183 @@ footer {
   }
   .footer-copyright-right {
     flex-direction: column;
+  }
+}
+@media (min-width: 390px) and (max-width: 850px) {
+  nav {
+    padding: 16px 60px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  .img-div {
+    height: 820px;
+    width: 1440px;
+    background-image: url(bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-Content {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .hero-Content h1 {
+    font-size: 60px;
+    text-align: center;
+    line-height: 70px;
+    width: 538px;
+    margin: auto;
+  }
+  .hero-Content p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .hero-Content a {
+    margin: auto;
+    padding: 10px 56px;
+  }
+  .brands {
+    padding: 40px 0px;
+    overflow-x: scroll;
+    width: 600px;
+    gap: 20px;
+  }
+  .products{
+  padding: 48px 0 48px 60px;
+  }
+  .products h2{
+    text-align: center;
+  }
+  .shop-collection{
+    padding-top: 48px;
+  padding-left: 60px;
+  }
+  .shop-collection h2 {
+    text-align: center;
+  }
+  .shop-products {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .shop-img {
+    height: 664px;
+    width: 600px;
+    position: relative;
+  }
+  
+  .shop-img2 {
+    height: 464px;
+    width: 600px;
+    position: relative;
+  }
+  .shop-hover {
+    position: absolute;
+    top: 538px;
+    left: 38px;
+  }
+  .shop-hover2 {
+    position: absolute;
+    top: 341px;
+    left: 32px;
+  }
+  .bestSeller {
+    padding: 48px 80px 100px 80px;
+  }
+  .bestSeller h2{
+    text-align: center;
+  }
+  .bestSeller .product-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 50px 10px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    height: 367px;
+    width: 720px;
+    padding: 32px;
+  }
+  .banner-content-top h2 {
+    font-size: 34px;
+    text-align: center;
+  }
+  .banner-content-top p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .banner-content-top h2 {
+    font-size: 34px;
+  }
+  .banner-content-top span {
+    text-align: center;
+  }
+  .banner-content-bottom{
+    margin: auto;
+  }
+  .banner-content-bottom p{
+    text-align: center;
+  }
+  .banner-content-bottom a{
+    margin: auto;
+  }
+  .values {
+    margin: auto;
+    padding: 40px 0px;
+    justify-content: center;
+  }
+  .values div {
+    flex-direction: column;
+  }
+  .newsfeed-content p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .posts{
+    gap: 10px ;
+  }
+  .posts img{
+    width: 160px;
+  }
+  .newsletter img{
+    display: none;
+  }
+  .newsletter-content {
+    width: 100%;
+    height: 360px;
+    top: 0px;
+    left: 0px;
+    padding: 95px 32px;
+    background-color: #f2f4f6;
+  }
+  footer {
+    width: 100%;
+    padding: 48px 32px;
+  }
+  .footer-nav {
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+  .footer-copyright {
+    flex-direction: column-reverse;
+    gap: 20px;
+    width: 100%;
+  }
+  .footer-copyright-left{
+    gap: 50px;
+  }
+  .footer-copyright-left i{
+    font-size: 30px;
   }
 }
